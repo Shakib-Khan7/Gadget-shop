@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+
+/* nav styles */
+
+.top-bar{
+    display: flex;
+    justify-content:space-around;
+}
+.nav-bar{
+    display: flex;
+    justify-content:space-between;
+    width: 600px;
+    margin-left: 400px;
+    
+}
+.nav-title h2{
+    font-family: Poppins;
+font-size: 24px;
+}
+.nav-bar p{
+    font-family: Poppins;
+font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER STYLES */
+
+.header-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.cam1{
+    width: 440px;
+    height: 414px;
+    
+}
+.Start-info h1{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 52px;
+}
+.Start-info p{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.prebook-btn{
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+    
+
+}
+.start-photo{
+background-image: url("../images/Circle\ design.svg");
+width: 475px;
+height: 475px;
+}
+.fa-arrow-right-long{
+    margin-left: 8px;
+}
+
+
+
+/* sponsor styles   */
+
+
+.sponsors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin : 20px 165px 90px 165px;
+    
+}
+
+
+
+/* main styles */
+.collections{
+    margin-top: 90px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    
+    
+    justify-items: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+.collection{
+    width: 500px;
+    height: 476px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+    
+    
+
+}
+
+.collection-photo img{
+    width: 300px;
+    height: 256px;
+    margin-left: 100px;
+}
+.c-desc{
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    align-items: center;
+    
+}
+.filled{
+    color: var(--orange-60, #FB8200);
+}
+.c-desc .price{
+    font-size:24px ;
+    color: rgba(0, 0, 0, 0.87);
+}
+.upper-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.see-more a{
+    
+    margin-left: 1460px;
+    color: rgba(224, 44, 109, 0.87);
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+
+/* lower mainnn */
+
+.low-container{
+    margin-left: 165px;
+    margin-top: 100px;
+}
+
+.featured{
+    display: flex;
+    column-gap: 60px;
+}
+
+.featured-img img{
+    width: 404px;
+height: 270px;
+}
+.title h3{
+    font-family: Poppins;
+font-size: 38px;
+
+}
+.details{
+
+font-family: Poppins;
+font-size: 16px;
+}
+.Download-btn{
+    padding: 10px 24px;
+    background: #E02C6D;
+    font-family: Poppins;
+font-size: 16px;
+color: #FFF;
+border: none;
+margin-top: 20px;
+}
+
+
+/* media queries */
+
+
+
+
+@media only screen and (max-width:576px) {
+
+    .start-photo{
+        background-size:257px;
+        width: 257px;
+        height: 257px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+
+    .cam1{
+        width: 202px;
+        height: 190px;
+    }
+    .header-info{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+
+    .top-bar{
+        margin-left: 60px;
+        flex-direction: column;
+        
+    }
+    .nav-bar{
+        display: none;
+    }
+     .sponsors{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        
+        
+    } 
+
+
+    .sponsors img{
+        width: 33.381px;
+    height: 18.838px;
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .see-more a{
+        margin-left: 0;
+    }
+    .collection{
+        width: 329px;
+        height: 476px;
+    }
+    .collection .collection-photo img{
+        margin-left: 0;
+    }
+  
+
+    /* .low-container */
+
+
+    .low-container{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .featured{
+        flex-direction: column-reverse;
+    }
+    .featured-img img{
+        width: 299px;
+        height: 188px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .btn{
+        margin-top: 30px;
+        margin-left: 90px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide{
+    display:none;
+}
